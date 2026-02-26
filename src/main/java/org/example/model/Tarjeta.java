@@ -1,27 +1,22 @@
 package org.example.model;
 
 public class Tarjeta {
-    private int idTarjeta;
+    private int id;
     private String texto;
     private String cita;
-    private String categoria;
+    private int categoriaId;
+    private String nombreCategoria;
 
-    public Tarjeta(int idTarjeta, String texto, String cita, String categoria) {
-        this.idTarjeta = idTarjeta;
-        this.texto = texto;
-        this.cita = cita;
-        this.categoria = categoria;
-    }
 
     public Tarjeta() {
     }
 
-    public int getIdTarjeta() {
-        return idTarjeta;
+    public int getId() {
+        return id;
     }
 
-    public void setIdTarjeta(int idTarjeta) {
-        this.idTarjeta = idTarjeta;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTexto() {
@@ -40,11 +35,19 @@ public class Tarjeta {
         this.cita = cita;
     }
 
-    public String getCategoria() {
-        return categoria;
+    public int getCategoriaId() {
+        return categoriaId;
     }
 
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+    public void setCategoriaId(int categoriaId) {
+        this.categoriaId = categoriaId;
+    }
+
+    public String getNombreCategoria() {
+        return nombreCategoria;
+    }
+
+    public void setNombreCategoria(String nombreCategoria) {
+        this.nombreCategoria = nombreCategoria;
     }
 }
